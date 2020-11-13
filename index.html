@@ -14,20 +14,20 @@
 </head>
 
 <body>
-    <header id="home" class="container-fluid fixed-background text-robot">
+    <!-- <header id="home" class="container-fluid fixed-background text-robot">
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="img/bg-video.mp4" type="video/mp4">
         </video>
         <div class="container justify-content-center h-100">
-            <div class="container d-flex h-75 align-items-center">
+            <div class="container d-flex h-75 align-items-center mx-auto justify-content-center">
                 <div class="row h-50 justify-content-center">
                     <p class="col-12 mb-4 text-center">" I'm <span>Roei Boribor</span> a web <span>Designer</span> &
                         <span>Developer</span>
                         "</p>
                     <h1 class="display-3 col-12 mb-5 text-pulse text-center">Welcome to Borinatics</h1>
                     <div class="inner-container h-100 mt-5 col-12 row justify-content-center">
-                        <div class="col-12 col-sm-3 col-lg-3 mt-5">
+                        <div class="btn-wrapper col-12 col-sm-3 col-lg-3">
                             <a class="btn-animation cus-btn" href="#works">
                                 <span></span>
                                 <span></span>
@@ -36,25 +36,69 @@
                                 Works<i class="ml-3 fa fa-code fa-2x"></i>
                             </a>
                         </div>
-                        <div class="col-12 col-sm-3 col-lg-3 mt-5">
-                            <a class="btn-animation cus-btn" href="#contacts">
+                        <div class="btn-wrapper col-12 col-sm-3 col-lg-3">
+                            <a class="btn-animation cus-btn" href="#about">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                                Contact
-                                <i class="ml-3 fa fa-address-book fa-2x"></i>
+                                About Us
+                                <i class="ml-3 fa fa-user fa-2x"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-bottom h-25 no-gutters">
-                <div class="arrow-wrapper">
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
+            <div class="container-bottom h-25 no-gutters justify-content-center">
+                <a class="" href="#services">
+                    <div class="arrow-wrapper">
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header> -->
+    <header id="home" class="fixed-background text-robot">
+        <div class="overlay"></div>
+        <video class="" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="img/bg-video.mp4" type="video/mp4">
+        </video>
+        <div class="row content-wrapper justify-content-center py-5">
+            <p class="col-12 mt-5 text-center">" I'm <span>Roei Boribor</span> a web <span>Designer</span> &
+                <span>Developer</span>
+                "</p>
+            <h1 class="display-3 col-12 mb-5 text-pulse text-center">Welcome to Borinatics</h1>
+            <div class="container container-top col-12 row justify-content-center">
+                <div class="btn-wrapper col-6 col-sm-3 col-lg-3">
+                    <a class="btn-animation cus-btn" href="#works">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Works<i class="ml-3 fa fa-code fa-2x"></i>
+                    </a>
                 </div>
+                <div class="btn-wrapper col-6 col-sm-3 col-lg-3">
+                    <a class="btn-animation cus-btn" href="#about">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        About Us
+                        <i class="ml-3 fa fa-user fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container container-bottom">
+                <a class="" href="#services">
+                    <div class="arrow-wrapper">
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                    </div>
+                </a>
             </div>
         </div>
     </header>
@@ -180,7 +224,7 @@
                     <div class="container-bot col-md-6 col-12 d-flex flex-column justify-content-center">
                         <p class="lead mt-auto text-center">Want to get in touch? We'd love to hear from you. Here's how
                             you can contact me.</p>
-                        <a href="#contact" class="cus-btn btn-animation text-robot mb-auto px-xs-0">
+                        <a type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="borinatics@gmail.com" class="cus-btn btn-animation text-robot mb-auto px-xs-0">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -221,7 +265,7 @@
                                             PH</a></h5>
                                     <p class="">A simple printing service website that displays our latest personalized
                                         items like invitations, photos, stickers, mugs for our online business.</p>
-                                    <a href="#" class="btn btn-outline-dark">Details</a>
+                                    <a href="" class="btn btn-outline-dark">Details</a>
                                 </div>
                             </div>
                         </div>
@@ -305,22 +349,54 @@
             <h1 class="text-center">Blogs</h1>
         </section>
     </main>
-    
+
+    <!-- START MODALS -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODALS -->
+
     <!-- Start Footer -->
     <footer class="bg-gradient">
         <div class="container">
             <div class="row text-center py-4 justify-content-center">
                 <div class="col-sm-10 col-md-8 col-lg-6">
                     <h1><img src="img/brand-white.png" alt="logo white"></h1>
-                    <p>Seeking Web Developer work at Company that allows for implementation of communication, service, and design skills to
-                    the programming essentials.</p>
+                    <p>We offer a simple yet effective website designs for the small to large scale business. We aim to help companies to achieve their goal by means of unique web designs that fits the companies needs.</p>
                     <ul class="social pt-3">
-                        <li><a target="_blank" href="https://www.facebook.com/jenny.boribor.1"><i
+                        <li><a target="_blank" href="https://www.facebook.com/borinatics"><i
                                     class="fa fa-facebook fa-2x text-pulse"></i></a></li>
                         <li><a target="_blank" href="https://youtube.com/channel/UCioVv03qecMb1E6H9kYAdxA"><i
                                     class="fa fa-youtube fa-2x text-pulse"></i></a></li>
                         <li><a target="_blank" href="https://github.com/roei03jen"><i
                                     class="fa fa-github fa-2x text-pulse"></i></a></li>
+                        <li><a target="_blank" href="mailto:borinatics@gmail.com"><i
+                                    class="fa fa-envelope fa-2x text-pulse"></i></a></li>
                     </ul>
                 </div>
             </div>
